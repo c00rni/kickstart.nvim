@@ -102,11 +102,7 @@ vim.g.have_nerd_font = true
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
-<<<<<<< HEAD
-vim.opt.relativenumber = true
-=======
 -- vim.o.relativenumber = true
->>>>>>> upstream/master
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
@@ -208,17 +204,15 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
-<<<<<<< HEAD
 -- Custom command to launch script
 vim.keymap.set('n', '<space><C-f>', ':silent !tmux neww tmux-sessionizer<CR>', { desc = 'Open a tmux session in a important directory' })
 vim.keymap.set('n', '<space><C-h>', ':silent !tmux neww tmux-cht.sh<CR>', { desc = 'Search for language syntax help' })
-=======
+
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
->>>>>>> upstream/master
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -262,13 +256,10 @@ rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-<<<<<<< HEAD
   -- 'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'ThePrimeagen/vim-be-good',
-=======
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
 
->>>>>>> upstream/master
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
